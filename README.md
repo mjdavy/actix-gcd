@@ -1,3 +1,3 @@
 # actix-gcd
 simple web server in Rust using actix_web
-learning Rust using O'Reilly book
+using this for learning Rust from O'Reilly book - based on example from "Programming Rust, 2nd Edition"
