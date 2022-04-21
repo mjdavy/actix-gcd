@@ -5,9 +5,9 @@ fn main() {
             .route("/", web::get().to(get_index))
     });
 
-    println!("Serverubg on http://localhost:3000...");
+    println!("Serving on http://localhost:3000...");
     server
-    .bind("120.0.0.1:3000").expect("error binding server to address")
+    .bind("127.0.0.1:3000").expect("error binding server to address")
     .run().expect("error running server");
 }
 
@@ -20,7 +20,7 @@ fn get_index() -> HttpResponse {
                 <form action="/gcd" method="post">
                 <input type="text" name="n" />
                 <input type="text" name="m" />
-                <button type="submit">Compute GCD</button>2
+                <button type="submit">Compute GCD</button>
                 
 
             "#,
